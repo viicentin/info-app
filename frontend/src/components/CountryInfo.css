@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.country-info-container {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.country-info-container img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.loading-container {
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+.country-info-container h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.country-info-container h2 {
+  font-size: 1.5rem;
+  margin: 20px 0 10px;
+}
+
+.country-info-container .chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.country-info-container ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.country-info-container ul li {
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.country-info-container ul li a {
+  text-decoration: none;
+  color: white; 
+  display: block;
+  padding: 8px;
+}
+
+.country-info-container ul li a:hover {
+  text-decoration: underline;
+}
+
+.chart-container {
+  width: 100vw;
+  background-color: white;
+  border-radius: 12px;
+  border: solid 2px rgb(60, 59, 59);
+}
+
+h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+
+    .country-info-container img {
+        width: 400px;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 12px;
+        margin-top: 20px;
+      }
+
+      .country-info-container ul li {
+        text-align: right;
+      }
+}
